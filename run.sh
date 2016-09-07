@@ -19,4 +19,5 @@ php app/console pim:install --env=prod
 
 chown www-data:www-data /src -R
 source /etc/apache2/envvars
+/etc/init.d/apache2 stop
 exec apache2 -D FOREGROUND
