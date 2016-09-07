@@ -10,11 +10,11 @@ RUN php5enmod mcrypt
 
 RUN a2enmod rewrite
 
-RUN echo "date.timezone = \"Asia/Dubai\"" >> /etc/php5/cli/php.ini && \
-    echo "date.timezone = \"Asia/Dubai\"" >> /etc/php5/apache2/php.ini
+RUN echo "date.timezone = \"Europe/Berlin\"" >> /etc/php5/cli/php.ini && \
+    echo "date.timezone = \"Europe/Berlin\"" >> /etc/php5/apache2/php.ini
 
 # Set Default Variables
-ENV PIM_VERSION 1.2.7
+ENV PIM_VERSION v1.6-latest
 
 RUN rm -rf /app && \
     mkdir -p /src && \
